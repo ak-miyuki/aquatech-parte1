@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #32b9cd;
+}
+
+/* Style aplicado somente na classe CONTAINER que está DENTRO do HEADER */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px; /*--------- 0 = top / 120 = right / bottom / left */
+}
+
+.titulo {
+    color: #32b9cd;
+}
+
+.navbar {
+    display: flex;
+    list-style: none; /* tirou o estilo da list (bolinhas)*/
+    width: 300px;
+    justify-content: space-between;
+    color: #e3b062;
+}
+
+.navbar a {
+    color: #e3b062;
+    outline: none; /*----------- Box, quando o link está selecionado*/
+    text-decoration: none;
+}
+
+.agora {
+    font-weight: bolder; /*--------- link da pag atual fica em negrito*/
+}
+
+/* Imagem, que fica na pag inicial*/
+.banner {
+    height: 400px;
+    width: 100%;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png'); /*---- path= sai de styles ../ entra em assets/ entra em imgs/*/
+    background-size: cover; /*impede que a img quebre, caso ela seja menor que o tamanho da tela*/
+}
+
+.banner .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .container p {
+    width: 170px;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner .container span {
+    font-weight: bolder;
+}
+
+.social {
+    height: 400px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+
+.social .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box img {
+    width: 120px;
+    height: 120px;
+}
+
+.box h4 {
+    margin: 0;
+    margin-top: 10px;
+    color: #ed145b;
+}
+
+.footer {
+    height: 120px;
+    width: 100%;
+    background-color: #32b9cd;
+}
+
+.footer .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.footer h4 {
+    margin-bottom: 0;
+}
+
+.version {
+    font-weight: bolder;
+}
+
+/* Aqui termina o index.html */
